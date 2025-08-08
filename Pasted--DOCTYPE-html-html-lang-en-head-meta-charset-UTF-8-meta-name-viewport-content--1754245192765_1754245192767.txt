@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LunatiSynergy – $LUNSY</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #1b0033, #000);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 0.5rem;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding-top: 80px;
+      text-align: center;
+      padding: 4rem 1rem;
+      background: url('https://i.imgur.com/0h3X1QE.gif') no-repeat center center;
+      background-size: cover;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #88f;
+    }
+
+    .hero .buttons a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #5522cc;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#footer">Footer</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>LunatiSynergy</h1>
+      <p>The Organic Memecoin of the Lunar Tribe – We Co-Created the Journey to the Moon!</p>
+      <div class="buttons">
+        <a href="https://t.me/TribuLunarOficial" target="_blank">Join the Tribe on Telegram</a>
+        <a href="#community">Create Your Meme Now</a>
+      </div>
+      <p class="disclaimer">We don't pay for promotions – Your creativity is our engine!</p>
+    </section>
+  </header>
+
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p><strong>Our Mission:</strong> $LUNSY is 100% organic, built by the Lunar Tribe without paid promotions.</p>
+    <p><strong>The Lunar Tribe:</strong> A community of explorers and meme pioneers shaping $LUNSY together.</p>
+    <p><strong>Technology:</strong> Built on Solana for speed and low fees.</p>
+  </section>
+
+  <section id="community">
+    <h2>Community & Memes</h2>
+    <div class="social-links">
+      <p>📢 <a href="https://x.com/LunatiSynergy?s=21&t=X4z-892k5CWs0pQakV-f0Q" target="_blank">Follow @LunatiSynergy on X</a></p>
+      <p>💬 <a href="https://t.me/TribuLunarOficial" target="_blank">Join the Lunar Tribe on Telegram</a></p>
+      <p>🔥 Meme Challenge: <strong>#LunatiMemeChallenge</strong></p>
+    </div>
+    <div class="meme-info">
+      <p>Participate in the challenge – your meme could become the tribe's first NFT!</p>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>Suggest Site Improvements | Privacy Policy | 100% Organic Growth – No paid investments</p>
+    <a href="#home">Back to Top</a>
+  </footer>
+</body>
+</html>
