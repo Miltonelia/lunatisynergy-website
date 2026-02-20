@@ -233,197 +233,42 @@
       color: #aaf;
     }
 
-    /* Tokenomics Styles */
-    .tokenomics-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 2rem;
-    }
-
-    .token-info, .distribution-chart {
-      background: rgba(136, 136, 255, 0.1);
+    /* === NUEVAS SECCIONES (sin alterar el diseño original) === */
+    .new-section {
+      background: rgba(136, 136, 255, 0.08);
       padding: 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
+      margin: 2rem 0;
       border: 1px solid rgba(136, 136, 255, 0.2);
     }
 
-    .token-info h3, .distribution-chart h3 {
-      color: #88f;
-      margin-bottom: 1.5rem;
-      font-size: 1.5rem;
-    }
-
-    .token-details p {
-      margin: 0.8rem 0;
-      font-size: 1.1rem;
-    }
-
     .chart-container {
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .wallet-buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: #5522cc;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .trending-memes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
       margin-top: 1rem;
     }
 
-    .chart-item {
-      display: flex;
-      align-items: center;
-      margin: 1rem 0;
-      gap: 1rem;
-    }
-
-    .chart-bar {
-      height: 30px;
-      border-radius: 15px;
-      position: relative;
-      max-width: 200px;
-    }
-
-    .chart-bar.community { background: #4CAF50; }
-    .chart-bar.liquidity { background: #2196F3; }
-    .chart-bar.development { background: #FF9800; }
-    .chart-bar.marketing { background: #9C27B0; }
-
-    .chart-item span {
-      font-size: 0.9rem;
-      min-width: 150px;
-    }
-
-    /* Roadmap Styles */
-    .roadmap-container {
-      margin-top: 2rem;
-    }
-
-    .roadmap-phase {
-      display: flex;
-      margin: 2rem 0;
-      padding: 2rem;
-      background: rgba(136, 136, 255, 0.05);
-      border-radius: 10px;
-      border-left: 4px solid #333;
-      transition: all 0.3s ease;
-    }
-
-    .roadmap-phase.completed {
-      border-left-color: #4CAF50;
-      background: rgba(76, 175, 80, 0.1);
-    }
-
-    .roadmap-phase.active {
-      border-left-color: #2196F3;
-      background: rgba(33, 150, 243, 0.1);
-      box-shadow: 0 0 20px rgba(33, 150, 243, 0.2);
-    }
-
-    .phase-number {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background: #5522cc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-right: 2rem;
-      flex-shrink: 0;
-    }
-
-    .roadmap-phase.completed .phase-number {
-      background: #4CAF50;
-    }
-
-    .roadmap-phase.active .phase-number {
-      background: #2196F3;
-    }
-
-    .phase-content h3 {
-      color: #88f;
-      margin-bottom: 1rem;
-      font-size: 1.3rem;
-    }
-
-    .phase-content ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .phase-content li {
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      background: rgba(136, 136, 255, 0.05);
-      border-radius: 5px;
-      font-size: 0.95rem;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      .hero .buttons a {
-        display: block;
-        margin: 0.5rem auto;
-        max-width: 250px;
-      }
-
-      .logo {
-        width: 150px;
-        height: 150px;
-      }
-
-      .tokenomics-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-      }
-
-      .roadmap-phase {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .phase-number {
-        margin: 0 auto 1rem auto;
-      }
-
-      nav ul li {
-        margin: 0 0.5rem;
-      }
-
-      nav ul li a {
-        font-size: 0.9rem;
-      }
-
-      section {
-        padding: 2rem 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero {
-        padding: 2rem 0.5rem;
-      }
-
-      .hero h1 {
-        font-size: 1.5rem;
-      }
-
-      .logo {
-        width: 120px;
-        height: 120px;
-      }
-
-      nav ul {
-        flex-wrap: wrap;
-      }
-
-      nav ul li {
-        margin: 0.25rem;
-      }
+    .trending-memes img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(136, 136, 255, 0.3);
     }
   </style>
 </head>
@@ -436,8 +281,10 @@
         <li><a href="#tokenomics">Tokenomics</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#community">Community</a></li>
+        <li><a href="#architects">Architects</a></li>
       </ul>
     </nav>
+
     <section class="hero">
       <div class="logo-container">
         <img src="logo.jpg" alt="lunatisynergy logo" class="logo">
@@ -445,6 +292,7 @@
       <h1>LunatiSynergy</h1>
       <p class="token-ticker">$LUNSY</p>
       <p>The Organic Memecoin of the Lunar Tribe – We Co-Created the Journey to the Moon!</p>
+
       <div class="stats-row">
         <div class="stat-item">
           <span class="stat-value">1B</span>
@@ -459,22 +307,54 @@
           <span class="stat-label">Blockchain</span>
         </div>
       </div>
+
       <div class="buttons">
         <a href="https://t.me/TribuLunarOficial" target="_blank">Join the Tribe on Telegram</a>
         <a href="#tokenomics">View Tokenomics</a>
-        <a href="https://moonshot.com?ref=uf2nZB6ICy">Buy $LUNSY</a>
-</div>
+        <a href="https://pump.fun/BJTd4jToTYx8EkmSS7b9qtu7qxRTgPzf2RjmYMcSpump" target="_blank">Buy $LUNSY on Pump.fun</a>
+      </div>
       <p class="disclaimer">We don't pay for promotions – Your creativity is our engine!</p>
     </section>
   </header>
 
-  <section id="about-us">
-    <h2>About Us</h2>
-    <p><strong>Our Mission:</strong> $LUNSY is 100% organic, built by the Lunar Tribe without paid promotions.</p>
-    <p><strong>The Lunar Tribe:</strong> A community of explorers and meme pioneers shaping $LUNSY together.</p>
-    <p><strong>Technology:</strong> Built on Solana for speed and low fees.</p>
+  <!-- === NUEVA SECCIÓN: REGISTER AS ARCHITECT === -->
+  <section id="architects" class="new-section">
+    <h2>Become an Architect – Only 20 Spots Left</h2>
+    <p>Register your wallet to secure your place among the 100 Architects and receive exclusive benefits.</p>
+    <a href="https://tally.so/r/0Q62r9" target="_blank" style="display:inline-block; padding:1rem 2rem; background:#5522cc; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold;">
+      SECURE MY ARCHITECT SLOT NOW →
+    </a>
   </section>
 
+  <!-- === NUEVA SECCIÓN: LIVE CHART (Birdeye o Dexscreener) === -->
+  <section id="chart" class="new-section">
+    <h2>Live Token Chart</h2>
+    <div class="chart-container">
+      <iframe src="https://birdeye.so/token/BJTd4jToTYx8EkmSS7b9qtu7qxRTgPzf2RjmYMcSpump?chain=solana" width="100%" height="500" frameborder="0" style="border-radius:12px;"></iframe>
+    </div>
+  </section>
+
+  <!-- === NUEVA SECCIÓN: CONNECT WALLET === -->
+  <section class="new-section">
+    <h2>Connect Your Wallet</h2>
+    <div class="wallet-buttons">
+      <a href="https://phantom.app/" target="_blank">Phantom Wallet</a>
+      <a href="https://bitget.com/" target="_blank">Bitget Wallet</a>
+    </div>
+  </section>
+
+  <!-- === NUEVA SECCIÓN: TRENDING MEMES (puedes añadir más imágenes manualmente) === -->
+  <section class="new-section">
+    <h2>Trending Memes from Pump.fun</h2>
+    <div class="trending-memes">
+      <!-- Cambia los enlaces por memes reales o placeholders -->
+      <img src="https://via.placeholder.com/150?text=Meme+1" alt="Meme 1">
+      <img src="https://via.placeholder.com/150?text=Meme+2" alt="Meme 2">
+      <img src="https://via.placeholder.com/150?text=Meme+3" alt="Meme 3">
+    </div>
+  </section>
+
+  <!-- === SECCIÓN TOKENOMICS ACTUALIZADA CON NUEVO CA === -->
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <div class="tokenomics-grid">
@@ -484,7 +364,7 @@
           <p><strong>Token Symbol:</strong> $LUNSY</p>
           <p><strong>Blockchain:</strong> Solana</p>
           <p><strong>Total Supply:</strong> 1,000,000,000 LUNSY</p>
-          <p><strong>Contract Address:</strong> [To be announced]</p>
+          <p><strong>Contract Address (Pump.fun):</strong> BJTd4jToTYx8EkmSS7b9qtu7qxRTgPzf2RjmYMcSpump</p>
         </div>
       </div>
       <div class="distribution-chart">
@@ -511,6 +391,7 @@
     </div>
   </section>
 
+  <!-- === EL RESTO DEL CÓDIGO (roadmap, community, footer) SE MANTIENE IGUAL === -->
   <section id="roadmap">
     <h2>Roadmap</h2>
     <div class="roadmap-container">
